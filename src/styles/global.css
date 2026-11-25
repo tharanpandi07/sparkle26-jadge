@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+:root{font-family:'DM Sans',sans-serif;color:#f7f5ff;background:#080914;font-synthesis:none;text-rendering:optimizeLegibility}*{box-sizing:border-box}body{margin:0;min-width:320px;min-height:100vh}button,input{font:inherit}button{cursor:pointer}.mini-label,.eyebrow{font-size:10px;letter-spacing:2px;font-weight:800;color:#a49aff}.primary-btn,.secondary-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:12px;padding:13px 18px;font-weight:800;transition:.2s}.primary-btn{background:linear-gradient(110deg,#8c65ff,#c15cff);color:#fff;box-shadow:0 8px 24px #895cff33}.primary-btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.secondary-btn{background:#ffffff0b;border:1px solid #ffffff1b;color:#eee}.work-card{position:relative;background:linear-gradient(145deg,#17182a,#10111e);border:1px solid #ffffff14;border-radius:22px;padding:28px;max-width:1000px}.work-heading{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;margin-bottom:22px}.work-heading h2{font:700 26px 'Space Grotesk';margin:8px 0}.work-heading p{margin:0;color:#9c9cb2;font-size:13px}.app-error{color:#ff9b9b}.busy-overlay{margin:10px 0;color:#d3c4ff}
+
+/* ---- scorecard shell ---- */
+.live-pill{font-size:9px;letter-spacing:1.2px;color:#9ce5c0;background:#4bd18b12;border:1px solid #4bd18b30;padding:9px 12px;border-radius:30px;font-weight:800}
+.live-pill i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#5fe19a;margin-right:7px}
+.sc-shell{min-height:100vh;display:flex;flex-direction:column;background:radial-gradient(900px 500px at 85% -10%,#2a1b5c55,transparent),#080914}
+.sc-top{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 28px;background:#0b0c18ee;backdrop-filter:blur(10px);border-bottom:1px solid #ffffff12}
+.sc-brand{display:flex;align-items:center;gap:12px;background:none;border:0;color:#fff;text-align:left;padding:0}
+.sc-brand b{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,#8c65ff,#c15cff);font:700 15px 'Space Grotesk'}
+.sc-brand b span{font-size:10px;opacity:.85}
+.sc-brand div{font:700 15px 'Space Grotesk';letter-spacing:.5px}
+.sc-brand small{display:block;font:800 9px 'DM Sans';letter-spacing:2px;color:#a49aff;margin-top:2px}
+.sc-top-right{display:flex;align-items:center;gap:12px}
+.sc-signout{padding:9px 14px;font-size:13px}
+.sc-main{flex:1;width:100%;max-width:1180px;margin:0 auto;padding:30px 24px 40px}
+.sc-footer{text-align:center;padding:18px;font-size:10px;letter-spacing:2px;color:#6f708a}
+.sc-footer span{margin:0 6px}
+.empty-box{padding:46px 20px;text-align:center;color:#9c9cb2;border:1px dashed #ffffff22;border-radius:16px;margin-top:18px}
+@media(max-width:640px){.sc-top{padding:10px 14px}.sc-main{padding:20px 12px 30px}.sc-brand div{font-size:13px}.live-pill{display:none}}
