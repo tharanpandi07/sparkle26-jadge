@@ -1,0 +1,27 @@
+.home-head h1{font:700 32px 'Space Grotesk';margin:8px 0 6px}
+.home-head p{margin:0;color:#9c9cb2;font-size:14px}
+.level-tabs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:26px 0 22px;max-width:640px}
+.level-tab{display:flex;align-items:center;gap:14px;text-align:left;padding:16px 18px;border-radius:16px;color:#cfcfe6;background:#ffffff08;border:1px solid #ffffff14;transition:.2s}
+.level-tab:hover{border-color:#8c65ff66}
+.level-tab.active{background:linear-gradient(135deg,#8c65ff33,#c15cff22);border-color:#a98bff;color:#fff;box-shadow:0 8px 30px #8c65ff2a}
+.level-tab b{display:block;font:700 16px 'Space Grotesk'}
+.level-tab small{display:block;color:#9c9cb2;font-size:12px;margin-top:2px}
+.level-tab>div{flex:1}
+.level-count{font:700 20px 'Space Grotesk';color:#d3c4ff}
+.event-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.event-card{display:flex;flex-direction:column;gap:10px;text-align:left;color:#f7f5ff;padding:20px;border-radius:20px;background:linear-gradient(145deg,#17182a,#10111e);border:1px solid #ffffff14;transition:.2s}
+.event-card:hover{transform:translateY(-4px);border-color:#a98bff88;box-shadow:0 14px 36px #8c65ff26}
+.event-card-top{display:flex;justify-content:space-between;align-items:center}
+.event-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;font-size:24px;background:#ffffff0d}
+.cat-chip{font-size:9px;letter-spacing:1.2px;font-weight:800;text-transform:uppercase;padding:6px 10px;border-radius:20px}
+.cat-chip.tech{color:#8fd0ff;background:#4aa8ff18;border:1px solid #4aa8ff33}
+.cat-chip.non{color:#ffb98f;background:#ff914a18;border:1px solid #ff914a33}
+.event-card h3{margin:4px 0 0;font:700 20px 'Space Grotesk'}
+.event-meta{display:flex;align-items:center;gap:7px;font-size:13px;color:#a9a9c2}
+.judge-progress{display:grid;gap:7px;margin-top:4px}
+.judge-progress div{display:grid;grid-template-columns:56px 1fr 40px;align-items:center;gap:8px;font-size:11px;color:#9c9cb2}
+.judge-progress i{display:block;height:6px;border-radius:6px;background:#ffffff12;overflow:hidden}
+.judge-progress u{display:block;height:100%;background:linear-gradient(90deg,#8c65ff,#c15cff);border-radius:6px;transition:width .4s}
+.judge-progress em{font-style:normal;text-align:right;color:#d3c4ff;font-weight:700}
+.event-open{display:inline-flex;align-items:center;gap:4px;margin-top:6px;font-size:13px;font-weight:800;color:#b9a4ff}
+@media(max-width:520px){.level-tabs{grid-template-columns:1fr}.home-head h1{font-size:26px}}

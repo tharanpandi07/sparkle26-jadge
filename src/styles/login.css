@@ -1,0 +1,510 @@
+
+/* =========================================
+   SPARKLE'26 VOLUNTEER LOGIN
+   Premium Glassmorphism Design
+========================================= */
+
+/* GLOBAL */
+
+* {
+  box-sizing: border-box;
+}
+
+.login-screen {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+
+  background: #0a0a16;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* =========================================
+   FULL SCREEN UNIVERSITY BACKGROUND
+========================================= */
+
+.login-bg-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  z-index: -2;
+}
+
+/* DARK OVERLAY */
+
+.login-bg-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    110deg,
+    rgba(5, 12, 27, 0.72),
+    rgba(5, 10, 25, 0.48),
+    rgba(5, 8, 22, 0.62)
+  );
+
+  z-index: -1;
+}
+
+/* =========================================
+   LEFT SIDE CONTENT
+========================================= */
+
+.login-art {
+  position: relative;
+  overflow: hidden;
+
+  padding: 9vh 9vw;
+
+  background: transparent !important;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* LOGO */
+
+.login-mark {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 70px;
+}
+
+.login-logo {
+  width: 300px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+/* EYEBROW */
+
+.login-art .eyebrow {
+  position: relative;
+  z-index: 2;
+
+  color: #c3a0ff;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+
+  margin: 0;
+}
+
+/* MAIN HEADING */
+
+.login-art h1 {
+  position: relative;
+  z-index: 2;
+
+  color: #ffffff;
+
+  font: 700 clamp(42px, 6vw, 76px)/1.08 'Space Grotesk';
+
+  margin: 18px 0;
+
+  letter-spacing: -2px;
+}
+
+.login-art h1 em {
+  color: #ffbd7a;
+  font-style: normal;
+}
+
+/* DESCRIPTION */
+
+.login-copy {
+  position: relative;
+  z-index: 2;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  max-width: 390px;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  margin-top: 12px;
+}
+
+/* DECORATIVE ORBITS */
+
+.orbit {
+  position: absolute;
+  z-index: 1;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  border-radius: 50%;
+
+  width: 400px;
+  height: 400px;
+
+  right: -130px;
+  bottom: -150px;
+
+  pointer-events: none;
+}
+
+.orbit-two {
+  width: 560px;
+  height: 560px;
+
+  right: -210px;
+  bottom: -230px;
+}
+
+/* =========================================
+   RIGHT SIDE GLASS LOGIN CARD
+========================================= */
+
+.login-card {
+  position: relative;
+  z-index: 5;
+
+  align-self: center;
+  justify-self: center;
+
+  width: min(420px, 85%);
+
+  padding: 42px;
+
+  /* GLASS TRANSPARENCY */
+
+  background: rgba(16, 18, 38, 0.48);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  /* GLASS BORDER */
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+
+  border-radius: 24px;
+
+  /* GLASS SHADOW */
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+
+  color: #ffffff;
+}
+
+/* =========================================
+   VOLUNTEER ACCESS LABEL
+========================================= */
+
+.login-card .mini-label {
+  display: block;
+
+  color: #c3a0ff;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   LOGIN HEADING
+========================================= */
+
+.login-card h2 {
+  color: #ffffff;
+
+  font: 700 32px 'Space Grotesk';
+
+  margin: 0 0 12px;
+
+  letter-spacing: -0.8px;
+}
+
+/* LOGIN DESCRIPTION */
+
+.login-card p {
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 13px;
+  line-height: 1.8;
+
+  margin: 0 0 30px;
+}
+
+/* =========================================
+   INPUT LABEL
+========================================= */
+
+.login-card label {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   ACCESS KEY INPUT
+========================================= */
+
+.login-card input {
+  display: block;
+
+  width: 100%;
+  height: 52px;
+
+  padding: 0 16px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-family: inherit;
+
+  background: rgba(5, 8, 24, 0.48);
+
+  border: 1px solid rgba(255, 255, 255, 0.20);
+
+  border-radius: 12px;
+
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+/* PLACEHOLDER */
+
+.login-card input::placeholder {
+  color: rgba(255, 255, 255, 0.48);
+}
+
+/* INPUT FOCUS */
+
+.login-card input:focus {
+  border-color: #b477ff;
+
+  background: rgba(5, 8, 24, 0.65);
+
+  box-shadow:
+    0 0 0 3px rgba(164, 103, 255, 0.15);
+}
+
+/* =========================================
+   CONTINUE BUTTON
+========================================= */
+
+.login-card .primary-btn {
+  width: 100%;
+  height: 54px;
+
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+
+  background: linear-gradient(
+    110deg,
+    #ffbd7a,
+    #bd4df5
+  );
+
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 25px rgba(151, 77, 255, 0.25);
+
+  transition: all 0.3s ease;
+}
+
+/* BUTTON HOVER */
+
+.login-card .primary-btn:hover {
+  transform: translateY(-3px);
+
+  background: linear-gradient(
+    110deg,
+    #996dff,
+    #d05aff
+  );
+
+  box-shadow:
+    0 12px 30px rgba(151, 77, 255, 0.4);
+}
+
+/* BUTTON ACTIVE */
+
+.login-card .primary-btn:active {
+  transform: scale(0.98);
+}
+
+/* =========================================
+   SECURITY FOOTER
+========================================= */
+
+.login-card small {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 11px;
+
+  margin-top: 24px;
+}
+
+/* =========================================
+   ERROR MESSAGE
+========================================= */
+
+.login-card .inline-error {
+  color: #ff9999;
+
+  font-size: 12px;
+
+  margin-top: 10px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .login-screen {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login-art {
+    padding: 6vh 5vw;
+  }
+
+  .login-card {
+    width: 90%;
+    padding: 32px;
+  }
+
+}
+
+/* TABLET AND MOBILE */
+
+@media (max-width: 760px) {
+
+  .login-screen {
+    grid-template-columns: 1fr;
+
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .login-bg-image {
+    object-position: center;
+  }
+
+  .login-bg-overlay {
+    background: rgba(5, 8, 22, 0.65);
+  }
+
+  .login-art {
+    min-height: 390px;
+
+    padding: 35px 30px;
+  }
+
+  .login-mark {
+    margin-bottom: 30px;
+  }
+
+  .login-logo {
+    width: 100px;
+    height: 80px;
+  }
+
+  .login-art .eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .login-art h1 {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .login-copy {
+    font-size: 13px;
+  }
+
+  .login-card {
+    width: calc(100% - 40px);
+
+    max-width: 420px;
+
+    padding: 30px 25px;
+
+    margin: 20px auto 35px;
+  }
+
+  .login-card h2 {
+    font-size: 27px;
+  }
+
+  .orbit {
+    width: 250px;
+    height: 250px;
+  }
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+
+  .login-art {
+    padding: 28px 22px;
+  }
+
+  .login-art h1 {
+    font-size: 36px;
+  }
+
+  .login-card {
+    padding: 25px 20px;
+  }
+
+}
